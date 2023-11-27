@@ -23,8 +23,8 @@ function App() {
             rel="noreferrer"
           >
             open sourced on Github
-          </a>
-          and
+          </a>{" "}
+          and{" "}
           <a
             href="https://app.netlify.com/sites/merry-puppy-f28442/overview"
             target="_blank"
