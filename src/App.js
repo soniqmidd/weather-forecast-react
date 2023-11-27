@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Weather defaultCity="Houston" />
+        <footer>
+          This project was created by{" "}
+          <a
+            href="https://gilded-starburst-7bef05.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sonique Middleton
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/soniqmidd/react-weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open sourced on Github
+          </a>
+          and
+          <a
+            href="https://heroic-pika-84addb.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
